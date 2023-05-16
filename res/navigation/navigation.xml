@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation">
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.harzstempelroutenapp.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+
+
+    <fragment
+        android:id="@+id/navigation_filter"
+        android:name="com.example.harzstempelroutenapp.FilterFragment"
+        android:label="Filter"
+        tools:layout="@layout/fragment_filter" />
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.harzstempelroutenapp.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

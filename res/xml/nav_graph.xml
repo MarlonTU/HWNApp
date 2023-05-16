@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.harzstempelroutenapp.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.harzstempelroutenapp.MapFragment"
+        android:label="Map">
+        <action
+            android:id="@+id/action_mapFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.harzstempelroutenapp.FilterFragment"
+        android:label="Filter" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.harzstempelroutenapp.ProfileFragment"
+        android:label="Profile" />
+
+</navigation>
